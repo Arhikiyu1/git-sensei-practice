@@ -1,8 +1,12 @@
 import google.generativeai as genai
 import subprocess
+import os
+from dotenv import load_dotenv
 
-# APIキーを設定
-genai.configure(api_key="AIzaSyB0wQG0Ou29ufYs90kEvdj8SbF6DSbulJ8")
+load_dotenv()  # .envファイルを読み込む
+
+api_key = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel("models/gemini-2.5-flash-lite")
 
 # git diffの出力を取得
