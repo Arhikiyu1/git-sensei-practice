@@ -2,7 +2,7 @@ import google.generativeai as genai
 import subprocess
 
 # APIキーを設定
-genai.configure(api_key="YOURE_API_KEY")
+genai.configure(api_key="AIzaSyB0wQG0Ou29ufYs90kEvdj8SbF6DSbulJ8")
 model = genai.GenerativeModel("models/gemini-2.5-flash-lite")
 
 # git diffの出力を取得
