@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 88
+extend-ignore =
+    # blackと競合するルールを無視
+    E203,
+    E221,
+    E222,
+    E231,
+    E272,
+    W503
